@@ -1,0 +1,8 @@
+.env
+.vscode
+node_modules
+*.zip
+.cache
+ids.txt
+*.log
+logs.txt

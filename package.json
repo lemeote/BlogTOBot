@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "dotenv": "^16.1.4",
+    "openai": "^3.3.0",
+    "puppeteer": "^20.7.2",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "twitter-api-v2": "^1.15.0"
+  },
+  "scripts": {
+    "start": "node index.js && touch ids.txt",
+    "kill-puppeteer-chrome": "instances=$(pgrep -f 'chrome-mac-x64/Google Chrome for Testing' | wc -l) && if [[ $instances -eq 0 ]]; then echo 'No instances found.'; else pkill -f 'chrome-mac-x64/Google Chrome for Testing' && echo 'Killed $instances instances.'; fi"
+  }
+}
